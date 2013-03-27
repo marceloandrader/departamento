@@ -1,1 +1,5 @@
-not used images
+node_modules
+temp
+dist
+.sass-cache
+app/components

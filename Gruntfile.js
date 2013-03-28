@@ -262,7 +262,7 @@ module.exports = function (grunt) {
         'cssmin',
         'htmlmin',
         'concat',
-        'uglify',
+        //'uglify',
         'copy',
         'usemin'
     ]);

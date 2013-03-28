@@ -220,6 +220,14 @@ module.exports = function (grunt) {
         bower: {
             rjsConfig: 'app/scripts/main.js',
             indent: '    '
+        },
+        shell: {
+            push: {
+                command: 'git checkout gh-pages && cp -r dist/* ./ && git add . && git commit -m \'auto commit\' && git push origin gh-pages && git checkout master',
+                options: {
+                    stdout: true
+                }
+            }
         }
     });
 

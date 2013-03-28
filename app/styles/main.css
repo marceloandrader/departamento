@@ -2,7 +2,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
   color: #aaa;
-  background: #000 url(../../images/bg.png);
+  background: #000 url(../images/bg.png);
 }
 .deck-container .slide {
   /*background: #000;*/

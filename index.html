@@ -248,6 +248,10 @@
 <script>
 	$(function() {
 		$.deck('.slide');
+        $(document).bind('deck.change', function(event, from, to) {
+            // tell google analytics to check which slides visit
+            ga('send', 'event', 'slide', 'change', to);
+        });
 	});
 </script>
 </body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html manifest="offline.manifest">
+    <head>
+        <title>Price Calculator</title>
+    <link rel="stylesheet" href="styles/prices.css">
+    </head>
+    <body>
+        <h1>Price Calculator</h1>
+        <p>
+            <label for="entrada">Valor de Entrada</label>
+            <input id="entrada" data-bind="value: entrada" value="26700">
+        </p>
+        <p>
+            <label for="pct_entrada">Porcentaje de Entrada</label>
+            <input id="pct_entrada" data-bind="value: pctEntrada" value="30">
+        </p>
+        <p>
+            <button data-bind="click: calcular">Calcular</button>
+        </p>
+        <p>
+            <label>Precio Calculado: <span data-bind="text: precio">89000</span></label>
+        </p>
+    <script src="scripts/vendor/prices.js"></script>
+    </body>
+</html>

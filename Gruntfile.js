@@ -244,7 +244,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'coffee:dist',
-      'compass:server',
+      // 'compass:server',
       'livereload-start',
       'connect:livereload',
       'open',
@@ -255,7 +255,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'coffee',
-    'compass',
+    // 'compass',
     'connect:test',
     'mocha'
   ]);

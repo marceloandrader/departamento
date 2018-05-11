@@ -54,8 +54,8 @@ var Departamento = function () {
   var self = this;
 
   var calcularPrecio = function dptoCalcularPrecio(porcentajeEntradaPropuesto) {
-    var valorPedido = 89000;
-    var descuentoMaximo = 7000;
+    var valorPedido = 87000;
+    var descuentoMaximo = 6960;
     var porcentajeEntrada = porcentajeEntradaPropuesto / 100;
     if (porcentajeEntradaPropuesto < 30) {
       return valorPedido;
@@ -66,8 +66,8 @@ var Departamento = function () {
     return valorPedido - (entrada * descuentoMaximo / valorPedido);
   };
 
-  var PRECIO = 89000;
-  self.entrada = ko.observable(26700);
+  var PRECIO = 87000;
+  self.entrada = ko.observable(26100);
   self.pctEntrada = ko.observable(30);
   self.updating = false;
   self.entrada.subscribe(function (newVal) {

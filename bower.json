@@ -6,7 +6,7 @@
     "jquery": "~1.9.1",
     "deck.js": "latest",
     "normalize-css": "~2.1.2",
-    "knockout": "~2.3.0rc"
+    "knockout": "~2.3.0"
   },
   "devDependencies": {}
 }

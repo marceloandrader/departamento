@@ -150,14 +150,15 @@ module.exports = function (grunt) {
       }
     },
     useminPrepare: {
-      html: ['<%= yeoman.app %>/*.html'],
+      html: '<%= yeoman.app %>/*.html',
       options: {
+        root: '<%= yeoman.app %>',
         dest: '<%= yeoman.dist %>'
       }
     },
     usemin: {
-      html: ['<%= yeoman.dist %>/*.html'],
-      css: ['<%= yeoman.dist %>/styles/*.css'],
+      html: '<%= yeoman.app %>/index.html',
+      css: ['<%= yeoman.app %>/styles/*.css'],
       options: {
         dirs: ['<%= yeoman.dist %>']
       }
@@ -233,8 +234,6 @@ module.exports = function (grunt) {
   });
 
   grunt.renameTask('regarde', 'watch');
-  // remove when mincss task is renamed
-  grunt.renameTask('mincss', 'cssmin');
 
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
@@ -265,7 +264,7 @@ module.exports = function (grunt) {
     'jshint',
     //'test',
     'coffee',
-    'compass:dist',
+    // 'compass:dist',
     'useminPrepare',
     'imagemin',
     'cssmin',
